@@ -6,11 +6,11 @@ require 'dragonfly/swift_data_store/version'
 Gem::Specification.new do |spec|
   spec.name          = "dragonfly-swift_data_store"
   spec.version       = Dragonfly::SwiftDataStore::VERSION
-  spec.authors       = ["Mark Evans"]
-  spec.email         = ["mark@new-bamboo.co.uk"]
-  spec.description   = %q{S3 data store for Dragonfly}
-  spec.summary       = %q{Data store for storing Dragonfly content (e.g. images) on S3}
-  spec.homepage      = "https://github.com/markevans/dragonfly-swift_data_store"
+  spec.authors       = ["Dennis van der Vliet"]
+  spec.email         = ["dennis.vandervliet@gmail.com"]
+  spec.description   = %q{OpenStack Swift data store for Dragonfly}
+  spec.summary       = %q{Data store for storing Dragonfly content (e.g. images) on OpenStack Seift}
+  spec.homepage      = "https://github.com/dennisvdvliet/dragonfly-swift-data-store"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -23,11 +23,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "mime-types"
   spec.add_development_dependency "rspec", "~> 2.0"
   spec.add_development_dependency "simplecov"
-  spec.post_install_message = <<-POST_INSTALL_MESSAGE
-=====================================================
-Thanks for installing dragonfly-swift_data_store!!
-If you have any fog compatibility problems, please be aware that
-it now depends on the 'fog-aws' gem rather than the 'fog' gem.
-=====================================================
-POST_INSTALL_MESSAGE
 end
