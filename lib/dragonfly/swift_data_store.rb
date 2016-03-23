@@ -64,7 +64,6 @@ module Dragonfly
     end
 
     def storage
-      Excon.defaults[:ssl_verify_peer] = false
       @storage ||= begin
         storage = Fog::Storage.new(fog_storage_options.merge({
           provider: 'OpenStack',
